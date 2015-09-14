@@ -7,7 +7,7 @@ var htmlMinify = require('html-minifier').minify;
 module.exports = function(options) {
     var opts = xtend({
         basepath: '',
-        pattern: /'@@import ([a-zA-Z0-9\-_.]+)'/g,
+        pattern: /'@@import ([a-zA-Z0-9\-_.\\/]+)'/g,
         debug: false
     }, options);
 
