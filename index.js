@@ -25,7 +25,8 @@ module.exports = function(options) {
                         filecontents = fs.readFileSync(fp, {encoding: 'utf8'});
                         filecontents = htmlMinify(filecontents, {
                             removeComments: true,
-                            collapseWhitespace: true
+                            collapseWhitespace: true,
+                            keepClosingSlash: true
                         });
                     } catch(e) {}
                     if(opts.debug) {
