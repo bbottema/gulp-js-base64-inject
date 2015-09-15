@@ -2,6 +2,7 @@ var fs = require('fs');
 var path = require('path');
 var through = require('through2');
 var xtend = require('xtend');
+var mime = require('mime');
 
 module.exports = function(options) {
     var opts = xtend({
@@ -21,9 +22,9 @@ module.exports = function(options) {
                     var fp = path.join(opts.basepath, filepath);
 
                     try {
-                        var filecontents = fs.readFileSync(fp, { encoding: 'utf8' });
+                        var filecontents = mime.lookup(filepath) + ';base64,' + fs.readFileSync(filepath).toString('base64');
                         opts.debug && console.log('   ', filepath, 'OK');
-                        return "'" + filecontents.replace(/\n/g, '\\n').replace(/'/g, "\\'") + "'";
+                        return "'" + filecontents + "'";
                     }
                     catch (e) {
                         console.error('unable to read utf8 file', fp);
