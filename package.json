@@ -1,27 +1,28 @@
 {
-  "name": "gulp-js-html-inject",
+  "name": "gulp-js-text-inject",
   "version": "0.0.1",
-  "description": "Gulp plugin for injecting referenced HTML files back into JS code as strings",
+  "description": "Gulp plugin for injecting referenced text files back into JS code as strings",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vladimmi/gulp-js-html-inject.git"
+    "url": "https://github.com/bbottema/gulp-js-text-inject.git"
   },
   "keywords": [
     "gulpplugin",
-    "js-html-inject"
+    "js-text-inject",
+    "embed-data"
   ],
-  "author": "Vladimir Marchevsky <vladimmi@gmail.com>",
+  "author": "Benny Bottema <b.bottema@projectnibble.org>",
+  "contributors": ["Vladimir Marchevsky <vladimmi@gmail.com>"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vladimmi/gulp-js-html-inject/issues"
+    "url": "https://github.com/bbottema/gulp-js-text-inject/issues"
   },
-  "homepage": "https://github.com/vladimmi/gulp-js-html-inject",
+  "homepage": "https://github.com/bbottema/gulp-js-text-inject",
   "dependencies": {
-    "html-minifier": "^0.7.2",
     "through2": "^0.6.5",
     "xtend": "^4.0.0"
   }
