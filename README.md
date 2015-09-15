@@ -1,6 +1,6 @@
-# gulp-js-html-inject
+# gulp-js-text-inject
 
-This is a small Gulp plugin for injecting referenced HTML files right into JS code as strings.
+This is a small Gulp plugin for injecting text files right directly into your .js code as strings.
 
 ## What is it
 
