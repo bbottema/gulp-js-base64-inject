@@ -1,6 +1,6 @@
 {
   "name": "gulp-js-text-inject",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Gulp plugin for injecting referenced text files back into JS code as strings",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,9 @@
     "embed-data"
   ],
   "author": "Benny Bottema <b.bottema@projectnibble.org>",
-  "contributors": ["Vladimir Marchevsky <vladimmi@gmail.com>"],
+  "contributors": [
+    "Vladimir Marchevsky <vladimmi@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bbottema/gulp-js-text-inject/issues"
