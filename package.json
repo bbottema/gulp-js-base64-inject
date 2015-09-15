@@ -1,6 +1,6 @@
 {
   "name": "gulp-js-base64-inject",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Gulp plugin for injecting image files back into JS code as strings",
   "main": "index.js",
   "scripts": {
