@@ -22,8 +22,7 @@ module.exports = function(options) {
                     var fp = path.join(opts.basepath, filepath);
 
                     try {
-                        var filecontents = 'data:' + mime.lookup(filepath) +
-                            ';base64,' + fs.readFileSync(fp).toString('base64');
+                        var filecontents = 'data:' + mime.lookup(filepath) + ';base64,' + fs.readFileSync(fp).toString('base64');
                         opts.debug && console.log('   ', filepath, 'OK');
                         return "'" + filecontents + "'";
                     }
